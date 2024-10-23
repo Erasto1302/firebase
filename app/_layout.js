@@ -5,7 +5,8 @@ export default function RootLayout() {
     <Stack>
       <Stack.Screen name="index" options={{title: "Firebase"}} />
       <Stack.Screen name="firebase" options={{title: "Firebase"}} />
-      
+      <Stack.Screen name="notification" options={{title: "Firebase"}} />
+      <Stack.Screen name="contacto" options={{title: "Firebase"}} />
     </Stack>
   );
 }

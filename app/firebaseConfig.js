@@ -1,8 +1,11 @@
 // firebaseConfig.js
 import { initializeApp } from 'firebase/app';
 import { getFirestore } from 'firebase/firestore';
+import { getAuth } from 'firebase/auth';
 // Your web app's Firebase configuration
-const firebaseConfig = {
+
+
+  const firebaseConfig = {
     apiKey: "AIzaSyCpQZXiUUkVVOJHfQZF6NOpNdCx2Q0uYsY",
     authDomain: "erastoaula.firebaseapp.com",
     projectId: "erastoaula",
@@ -13,8 +16,10 @@ const firebaseConfig = {
 
 // Inicializa o Firebase
 const app = initializeApp(firebaseConfig);
-
+const auth = getAuth(app); // auth
 // Inicializa o Firestore
 const db = getFirestore(app);
 
-export { db };
+export { auth, db }; // Exporte auth e db 
+
+
